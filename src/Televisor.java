@@ -1,19 +1,21 @@
 public class Televisor {
-    String onOFF;
+    String televisor;
 
-
-    String turnON(){
-        onOFF = "Telewizor włączony";
-        return onOFF;
+    Televisor(String t){
+        televisor = t;
     }
 
 
-    String turnOff(){
-        onOFF = "Telewizor wyłączoony";
-        return onOFF;
+    void turnON(){
+        televisor = "Telewizor włączony";
+    }
+
+
+    void turnOff(){
+        televisor = "Telewizor wyłączoony";
     }
 
     void showStatus(){
-        System.out.println("Status telewizora: " + onOFF);
+        System.out.println("Status telewizora: " + televisor);
     }
 }
